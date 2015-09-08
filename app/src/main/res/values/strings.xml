@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ActionBarFrame</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_base">BaseActivity</string>
+
+    <!--common-->
+    <string name="top_close">close</string>
+    <string name="top_open">open</string>
+
+    <string name="navdrawer_item_title_1">page1</string>
+    <string name="navdrawer_item_title_2">page2</string>
+    <string name="navdrawer_item_title_3">page3</string>
+    <string name="navdrawer_item_title_4">page4</string>
+    <string name="navdrawer_item_title_5">page5</string>
+    <string name="navdrawer_item_title_6">page6</string>
+    <string name="navdrawer_item_title_7">page7</string>
+
+    <string name="title_activity_main">PAGE 1</string>
+    <string name="title_activity_page1">Page1Activity</string>
+</resources>
