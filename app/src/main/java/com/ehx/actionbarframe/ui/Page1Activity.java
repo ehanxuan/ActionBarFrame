@@ -6,6 +6,7 @@ import android.view.MenuItem;
 
 import com.ehx.actionbarframe.R;
 import com.ehx.actionbarframe.ui.base.BaseActivity;
+import com.ehx.actionbarframe.utils.DrawerUtils;
 
 public class Page1Activity extends BaseActivity {
 
@@ -35,5 +36,10 @@ public class Page1Activity extends BaseActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public int getSelfNavDrawerItem() {
+        return DrawerUtils.NAVDRAWER_ITEM_1;
     }
 }

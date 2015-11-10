@@ -159,7 +159,7 @@ public class NavigationDrawerFragment extends Fragment {
         mDrawerLayout.setDrawerShadow(R.drawable.drawer_shadow, Gravity.START);
 
         // populate the nav drawer with the correct items
-//        mCurrentSelectedPosition = activity.getSelfNavDrawerItem();
+        mCurrentSelectedPosition = activity.getSelfNavDrawerItem();
         this.selectItem(mCurrentSelectedPosition);
 
     }
