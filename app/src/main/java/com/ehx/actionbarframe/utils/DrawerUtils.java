@@ -1,6 +1,12 @@
 package com.ehx.actionbarframe.utils;
 
+import android.content.Intent;
+import android.text.TextUtils;
+
 import com.ehx.actionbarframe.R;
+import com.ehx.actionbarframe.ui.MainActivity;
+import com.ehx.actionbarframe.ui.Page1Activity;
+import com.ehx.actionbarframe.ui.base.BaseActivity;
 
 /**
  * Created by ehanxuan on 15/4/16.
@@ -38,4 +44,29 @@ public class DrawerUtils {
             0,
             0
     };
+
+    public static boolean goToNavDrawerItem(BaseActivity activity, int item) {
+
+        boolean needFinishCurrentPage = true;
+
+        Intent intent = null;
+        switch (item) {
+            case NAVDRAWER_ITEM_1:
+                intent = new Intent(activity, MainActivity.class);
+                break;
+            case NAVDRAWER_ITEM_2:
+                intent = new Intent(activity, Page1Activity.class);
+                break;
+        }
+
+        if (intent != null) {
+//            if (intent.getComponent().getClassName().equals(activity.getClass().getCanonicalName())) {
+//                Log.w(activity.getTag(), "Abort migrating to self.");
+//                return null;
+//            }
+            activity.pushActivity(intent, false);
+        }
+
+        return needFinishCurrentPage;
+    }
 }
